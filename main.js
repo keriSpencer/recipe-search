@@ -10,14 +10,16 @@ let runSearch = function() {
     console.log(data)
 
     for (var i = 0; i < data.results.length; i++) {
+      /*let container = */
+
       let recipeDiv = document.createElement('div')
-      recipeDiv.id = 'recipeId'
+      recipeDiv.className = 'recipeClass'
       recipesDiv.appendChild(recipeDiv)
 
       let thumbnail = document.createElement('img')
 
       if (data.results[i].thumbnail === '') {
-        thumbnail.src = 'http://via.placeholder.com/150x150'
+        thumbnail.src = 'http://placekitten.com/150/150'
       } else {
         thumbnail.src = `${data.results[i].thumbnail}`
         thumbnail.id = 'thumbnailImage'

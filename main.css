@@ -5,20 +5,33 @@ body {
 img {
   width: 150px;
   height: 150px;
+  margin-bottom: 19px;
+  border: 1px solid black;
+  margin-top: 26px;
 }
 
-#recipeIngredients {
-  height: auto;
+hr {
+  margin-top: 27px;
 }
 
-#recipes {
+.recipeClass {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  margin: 0 5px 0 5px;
+}
+
+h1 {
+  width: auto;
 }
 
 .container {
   display: flex;
+  padding: 19px;
 }
 
-hr {
-  margin-top: 18px;
+#recipes {
+  display: flex;
+  flex-wrap: wrap;
 }
